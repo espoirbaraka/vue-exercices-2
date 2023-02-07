@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ContactMe from "@/components/ContactMe";
+import ContactView from "@/views/ContactView";
 
 Vue.use(VueRouter)
 
@@ -20,9 +20,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: 'contact',
+    path: '/contact',
     name: 'contact',
-    component: ContactMe
+    component: ContactView
   }
 ]
 
